@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panda Commerce</title>
 
+    <!-- Cascading Style Sheet  -->
+    <link rel="stylesheet" href="css/style.css">
+
     <!-- fontawesome cdn  -->
     <script src="https://kit.fontawesome.com/be4849e609.js" crossorigin="anonymous"></script>
 
@@ -32,16 +35,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#backpack">Backpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#subscribe">Subscribe</a>
                         </li>
 
 
@@ -52,11 +55,11 @@
         </nav>
 
         <!-- image-slider  -->
-        <section class="container mt-5 ">
+        <section class="container mt-5 " id="home">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner rounded">
                     <div class="carousel-item active">
-                        <div class="row p-5 bg-info bg-gradient align-items-center">
+                        <div class="row p-5 panda-info-background  align-items-center">
                             <div class="col-lg-7">
                                 <h1>Mi LED TV 4A PRO 43</h1>
                                 <p>Xiaomi Corporation, registered in Asia as Xiaomi Inc., is a Chinese multinational
@@ -75,7 +78,7 @@
 
                     </div>
                     <div class="carousel-item">
-                        <div class="row p-5 bg-info bg-gradient align-items-center">
+                        <div class="row p-5 panda-info-background align-items-center">
                             <div class="col-lg-7">
                                 <h1>Beats Headphone</h1>
                                 <p>Beats Electronics LLC is an American consumer audio products manufacturer
@@ -94,7 +97,7 @@
 
 
                     <div class="carousel-item">
-                        <div class="row p-5 bg-info bg-gradient align-items-center">
+                        <div class="row p-5 panda-info-background align-items-center">
                             <div class="col-lg-7">
                                 <h1>Xbox Series X
                                 </h1>
@@ -159,7 +162,7 @@
 
         <!-- shoes blocks here  -->
 
-        <section class="container">
+        <section class="container " id="shoes">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -169,6 +172,7 @@
                             <h5 class="card-title">SPLY-350</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                                 additional content. This content is a little bit longer.</p>
+                            <h3>$149</h3>
                         </div>
                         <div class="m-3">
                             <button class="btn btn-danger">Buy Now <i class="fas fa-arrow-right"></i></button>
@@ -181,7 +185,9 @@
                         <div class="card-body">
                             <h5 class="card-title">Nike 360</h5>
                             <p class="card-text">This card has supporting text below as a natural lead-in to additional
-                                content.</p>
+                                content.This content is a little bit longer.</p>
+                            <h3>$169</h3>
+
                         </div>
                         <div class="m-3">
                             <button class="btn btn-danger">
@@ -197,6 +203,7 @@
                             <h5 class="card-title">Red Airmax</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                                 additional content. This card has even longer content.</p>
+                            <h3>$199</h3>
                         </div>
                         <div class="m-3">
                             <button class="btn btn-danger">
@@ -210,7 +217,7 @@
 
         <!-- backpack blocks here  -->
 
-        <section class="container mt-5">
+        <section class="container mt-5" id="backpack">
             <h2>Backpack</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -261,21 +268,23 @@
 
         <!-- submission container -->
 
-        <section style="height: 300px;"
+        <section style="height: 300px;" id="subscribe"
             class="container d-flex justify-content-center bg-dark text-primary align-items-center rounded-3 mt-5">
             <div>
                 <h1>LET'S STAY IN TOUCH!</h1>
                 <p>Get updates on sales, specials and more.</p>
-                <input class="rounded" type="text" placeholder="Your email">
+                <input class="rounded p-2 form-control" type="email" placeholder="Your email" required>
                 <br>
-                <button class="btn btn-warning mt-2">Submit</button>
+                <a href="welcome.html" target="_blank">
+                    <button class="btn btn-warning mt-2">Submit</button>
+                </a>
             </div>
         </section>
 
     </main>
 
-    <footer class="mt-5 text-center text-danger">
-        &copy; 2021, Panda Wears Commerce. All rights reserved, The Ultraviolet, West Virginia, USA.
+    <footer class="my-5 text-center text-danger">
+        &copy; 2021, Panda eCommerce. All rights reserved, The Ultraviolet Inc. West Virginia, USA.
     </footer>
 
 
